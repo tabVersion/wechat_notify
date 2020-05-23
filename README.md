@@ -35,11 +35,14 @@ notify python train.py \> trail.log
 WECHAT_NOTIFY will push three kinds of notifications.
 
 * [Success]: inform you [what command, start time, how long the command takes, last three lines of output(if exists)]
+
     <img src='imgs/success.png' height=300>
 * [Failed]: inform you [what command, start time, how long the command takes, last three lines of stderr(if exists)]
+
     <img src='imgs/failed.png' height=300>
     <!-- ![img](imgs/failed.png) -->
 * [Keyboard Interrupt]: inform you [what command, start time, 'Keyboard Interrupt']
+
     <img src='imgs/kayboard.png' height=300>
     <!-- ![img](imgs/kayboard.png) -->
 
