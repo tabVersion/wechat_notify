@@ -25,7 +25,7 @@ def send_request(output, err, process, token, command, start, duration, is_win):
         if output is not None:
             output = [''] * 3  + output
             temp = 'the following are last three lines of stdout:\n' + '\n'.join(output[-3:])
-        post_str = r'https://sc.ftqq.com/' + token + '.send?' + f'text=[Scuucess] command: ' + ' '.join(command) + f'&desp=start at {time.ctime(int(start))}\ttake time: {duration}\t' + (temp if temp is not None else '')
+        post_str = r'https://sc.ftqq.com/' + token + '.send?' + f'text=[Success] command: ' + ' '.join(command) + f'&desp=start at {time.ctime(int(start))}\ttake time: {duration}\t' + (temp if temp is not None else '')
         requests.post(post_str)
     else:
         if err is not None:
