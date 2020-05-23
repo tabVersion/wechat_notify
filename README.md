@@ -4,6 +4,8 @@ Many scripts today may take a long time to run, such as deep learning tasks. We 
 
 This project is aimed to notify you through WeChat when certain command is completed.
 
+**update**: this package is now released. you can install via `pip3 install wechat-notify`.
+
 ## requirements
 
 This package rely on `requests`.
